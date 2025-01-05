@@ -8,7 +8,10 @@ import Sidebar from "./components/Sidebar"
 
 function App() {
   const [recipeQueue, setRecipeQueue] = useState([]);
-
+  const [preparedRecipe, setPreparedRecipe] = useState([]);
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
+  
   const addRecipeQueue = recipe => {
     const isExist = recipeQueue.find(addedItem => addedItem.recipe_id === recipe.recipe_id);
 
@@ -20,6 +23,19 @@ function App() {
     }
   }
 
+  const handleRemoveRecipe = id => {
+    const deletedRecipe = recipeQueue.find(recipe => recipe.recipe_id === id);
+    setPreparedRecipe([...preparedRecipe,deletedRecipe]);
+    const updateRecipeQueue = recipeQueue.filter(recipe => recipe.recipe_id !== id);
+    setRecipeQueue(updateRecipeQueue);
+  } 
+
+
+  // total time and total calories 
+  const calculateTimeAndCalories = (time, calories) => {
+    setTotalTime(totalTime + time);
+    setTotalCalories(totalCalories + calories);
+  }
   return (
     <>
       {/* Header and Navbar */}
@@ -32,7 +48,13 @@ function App() {
         {/* Recipes */}
         <section className="container mx-auto flex">
           <Recipes addRecipeQueue={addRecipeQueue} />
-          <Sidebar recipeQueue={recipeQueue} />
+          <Sidebar recipeQueue={recipeQueue}
+            handleRemoveRecipe={handleRemoveRecipe}
+            preparedRecipe={preparedRecipe}
+            calculateTimeAndCalories={calculateTimeAndCalories}
+            totalTime={totalTime}
+            totalCalories={totalCalories}
+          />
         </section>
       </main>
 
