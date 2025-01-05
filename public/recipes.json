@@ -1,0 +1,148 @@
+[
+    {
+      "recipe_img": "https://i.ibb.co.com/4tDvHXP/Spaghetti-Carbonara.jpg",
+      "recipe_id": 1,
+      "recipe_name": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish with creamy sauce and savory flavors.",
+      "ingredients": [
+        "Spaghetti",
+        "Eggs",
+        "Pancetta",
+        "Parmesan cheese",
+        "Black pepper"
+      ],
+      "preparing_time": 20,
+      "calories": 600
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/zr2H799/Chicken-Stir-fry.jpg",
+      "recipe_id": 2,
+      "recipe_name": "Chicken Stir-fry",
+      "description": "Quick and easy stir-fry with vegetables and flavorful sauce.",
+      "ingredients": [
+        "Chicken breast",
+        "Broccoli",
+        "Carrots",
+        "Soy sauce",
+        "Ginger"
+      ],
+      "preparing_time": 15,
+      "calories": 350
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/b20hS2F/lentil-soup.jpg",
+      "recipe_id": 3,
+      "recipe_name": "Lentil Soup",
+      "description": "Hearty and healthy lentil soup with a warm and comforting flavor.",
+      "ingredients": [
+        "Lentils",
+        "Carrots",
+        "Celery",
+        "Onion",
+        "Vegetable broth"
+      ],
+      "preparing_time": 45,
+      "calories": 220
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/H7fjb67/grilled-salmon.jpg",
+      "recipe_id": 4,
+      "recipe_name": "Grilled Salmon",
+      "description": "Simple and delicious grilled salmon with lemon and herbs.",
+      "ingredients": [
+        "Salmon fillets",
+        "Lemon",
+        "Dill",
+        "Olive oil"
+      ],
+      "preparing_time": 10,
+      "calories": 400
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/sjK9Ttm/Caesar-Salad.jpg",
+      "recipe_id": 5,
+      "recipe_name": "Caesar Salad",
+      "description": "Classic Caesar salad with romaine lettuce, croutons, and Parmesan cheese.",
+      "ingredients": [
+        "Romaine lettuce",
+        "Croutons",
+        "Parmesan cheese",
+        "Caesar dressing"
+      ],
+      "preparing_time": 5,
+      "calories": 180
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/wKqN4kN/beef-tacos.jpg",
+      "recipe_id": 6,
+      "recipe_name": "Beef Tacos",
+      "description": "Delicious tacos with seasoned ground beef, onions, and tomatoes.",
+      "ingredients": [
+        "Ground beef",
+        "Onions",
+        "Tomatoes",
+        "Taco seasoning",
+        "Tortillas"
+      ],
+      "preparing_time": 25,
+      "calories": 450
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/sJgPr6B/vegetable-curry.jpg",
+      "recipe_id": 7,
+      "recipe_name": "Vegetable Curry",
+      "description": "Flavorful vegetable curry with coconut milk and spices.",
+      "ingredients": [
+        "Potatoes",
+        "Cauliflower",
+        "Carrots",
+        "Coconut milk",
+        "Curry powder"
+      ],
+      "preparing_time": 30,
+      "calories": 300
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/2Zhw1k9/chocolate-chip-cookies.jpg",
+      "recipe_id": 8,
+      "recipe_name": "Chocolate Chip Cookies",
+      "description": "Classic chewy chocolate chip cookies.",
+      "ingredients": [
+        "Flour",
+        "Sugar",
+        "Butter",
+        "Eggs",
+        "Chocolate chips"
+      ],
+      "preparing_time": 30,
+      "calories": 350
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/C29hzgX/Pancakes.jpg",
+      "recipe_id": 9,
+      "recipe_name": "Pancakes",
+      "description": "Fluffy pancakes perfect for breakfast or brunch.",
+      "ingredients": [
+        "Flour",
+        "Milk",
+        "Eggs",
+        "Baking powder"
+      ],
+      "preparing_time": 15,
+      "calories": 200
+    },
+    {
+      "recipe_img": "https://i.ibb.co.com/6JjCGj1/Pizza.jpg",
+      "recipe_id": 10,
+      "recipe_name": "Pizza",
+      "description": "Homemade pizza with your favorite toppings.",
+      "ingredients": [
+        "Pizza dough",
+        "Pizza sauce",
+        "Cheese",
+        "Toppings (pepperoni, mushrooms, etc.)"
+      ],
+      "preparing_time": 40,
+      "calories": 550
+    }
+  ]
