@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Recipe from "./Recipe";
+import PropTypes from "prop-types";
 
-const Recipes = () => {
+const Recipes = ({addRecipeQueue}) => {
     const [recipes, setRecipes] = useState([]);
 
     useEffect(() => {
@@ -18,10 +19,14 @@ const Recipes = () => {
                 recipes.map(recipe => <Recipe
                     key={recipe.id}
                     recipe={recipe}
+                    addRecipeQueue={addRecipeQueue}
                 />)
             }
         </div>
     );
 };
 
+Recipes.propTypes = {
+    addRecipeQueue: PropTypes.func
+}
 export default Recipes;

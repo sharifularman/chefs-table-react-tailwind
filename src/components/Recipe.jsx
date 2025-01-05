@@ -2,19 +2,19 @@ import PropTypes from "prop-types";
 import { MdAccessTime } from "react-icons/md";
 import { FaFire } from "react-icons/fa";
 
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, addRecipeQueue}) => {
     const {id, recipe_img, recipe_name, description, ingredients, preparing_time, calories } = recipe;
 
     return (
         <div className="">
-            <div className="card bg-gray-100 h-full shadow-xl">
-                <figure className="h-64 object-cover p-6 ">
+            <div className="card  h-full border-2">
+                <figure className="h-64 object-cover px-4 ">
                     <img className="rounded-2xl"
                         src={recipe_img}
                         alt="" />
                 </figure>
                 <div className="card-body">
-                    <h2 className="card-title">{recipe_name}</h2>
+                    <h2 className="card-title text-2xl font-semibold  text-gray-700">{recipe_name}</h2>
                     <p className="text-gray-500">{description}</p>
                     <h3 className="text-lg font-semibold text-gray-600">Ingredients: {ingredients.length}</h3>
                     <ul className="list-disc ml-9">
@@ -29,7 +29,7 @@ const Recipe = ({ recipe }) => {
                         </div>
                    </div>
                     <div className="card-actions mt-4">
-                        <button className="btn rounded-full font-bold px-4 mr-4 bg-[rgb(11,229,138)]">Want To Cook</button>
+                        <button onClick={()=> addRecipeQueue(recipe)} className="btn rounded-full font-bold text-md px-8 bg-green-400">Want To Cook</button>
                     </div>
                 </div>
             </div>
@@ -38,6 +38,7 @@ const Recipe = ({ recipe }) => {
 };
 
 Recipe.propTypes = {
-    recipe: PropTypes.object
+    recipe: PropTypes.object,
+    addRecipeQueue: PropTypes.func
 }
 export default Recipe;

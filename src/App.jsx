@@ -1,3 +1,4 @@
+import { useState } from "react"
 import Banner from "./components/Banner"
 import Header from "./components/Header"
 import OurRecipes from "./components/OurRecipes"
@@ -6,6 +7,18 @@ import Sidebar from "./components/Sidebar"
 
 
 function App() {
+  const [recipeQueue, setRecipeQueue] = useState([]);
+
+  const addRecipeQueue = recipe => {
+    const isExist = recipeQueue.find(addedItem => addedItem.recipe_id === recipe.recipe_id);
+
+    if (!isExist) {
+      setRecipeQueue([...recipeQueue, recipe]);
+    }
+    else {
+      alert("The Recipe is already added")
+    }
+  }
 
   return (
     <>
@@ -15,14 +28,14 @@ function App() {
       <Banner />
       {/* our recipes */}
       <main>
-      <OurRecipes />
-      {/* Recipes */}
+        <OurRecipes />
+        {/* Recipes */}
         <section className="container mx-auto flex">
-        <Recipes />
-        <Sidebar />
+          <Recipes addRecipeQueue={addRecipeQueue} />
+          <Sidebar recipeQueue={recipeQueue} />
         </section>
       </main>
-  
+
     </>
   )
 }
